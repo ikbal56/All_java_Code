@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.te.springcore.Emp" name="employeeDetails">
+
+		<property name="id">
+			<value>123</value>
+		</property>
+		<property name="name">
+
+			<value>Rihab</value>
+		</property>
+
+		<property name="address">
+			<value>Kolkata</value>
+		</property>
+	</bean>
+
+<bean class="com.te.springcore.Emp"  name="employee">
+
+<property name="id" value="111"/>
+<property name="name" value="Arip"/>
+<property name="address" value="Murshidabad"/>
+
+</bean>
+
+<bean class="com.te.springcore.Emp" name="employee2 " p:id="331" p:name="Arish" p:address="Jangipur" />
+
+</beans>
